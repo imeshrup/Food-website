@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css"/>
+    <title>Food Website</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="relative container mx-auto p-6">
+        <!-- Flex container -->
+        <div class="flex items-center justify-between">
+            <!-- Logo -->
+            <div class="pt-0">
+                <img src="/img/logo.png" class="w-28 sm:w-36 h-auto mx-20"/>
+            </div>
+            <!-- Menu Items -->
+            <div class="hidden md:flex space-x-20 items-center justify-center font-bold text-xl p-6 mx-28">
+                <a href="#" class="hover:text-darkGrayishBlue">Home</a>
+                <a href="#" class="hover:text-darkGrayishBlue">Recipe</a>
+                <a href="#" class="hover:text-darkGrayishBlue">Blog</a>
+                <a href="#" class="hover:text-darkGrayishBlue">Contact</a>
+            </div>
+             <!--Hamburger icon  -->
+            <div class="sm:hidden">
+                <img src="img/menu.png" class="w-9 ml-40">
+            </div>               
+                <!-- Hamburger Icon -->
+                <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+                    <span class="hamburger-top"></span>
+                    <span class="hamburger-middle"></span>
+                    <span class="hamburger-bottom"></span>
+                </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="md:hidden flex items-center justify-center">
+            <div id="menu" class="absolute flex-col items-center justify-center hidden self-end py-8 mt-10 space-y-6 font-bold
+             bg-white sm:self-center left-6 right-6 drop-shadow-md">
+                <a href="#">Home</a>
+                <a href="#">Recipe</a>
+                <a href="#">Blog</a>
+                <a href="#">Contact</a>
+            </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section id="hero" class="w-full">
+        <!-- Flex Container -->
+        <div class="container flex flex-col-reverse md:flex-row items-center px-6 mx-auto mb-10 space-y-0 md:space-y-0">
+            <div class="flex flex-col mb-22 space-y-4 md:w-1/2">
+                <h1 class="hidden md:block max-w-2xl mb-12 font-bold text-center ml-20 md:text-4xl md:text-left my-8 leading-7">
+                    All happiness depends on</b> a leisurely breakfast
+                </h1>
+
+                <!-- On mobile screens (hidden on md and above), show h3 -->
+                <h3 class="md:hidden max-w-2xl text-lg text-center mb-2 ml-4 font-bold text-center ml-20 mb-4 leading-7">
+                    All happiness depends on a leisurely breakfast
+                </h3>
+
+                <div class="flex justify-center md:justify-start mb-16 pt-4">
+                    <a 
+                    href="#" 
+                    class="flex p-3 px-8 pt-4 mt-6 md:ml-20 mb-4 text-black bg-orange-600 rounded-full font-bold
+                    baseline hover:bg-gray-800"
+                    >Order Now</a>
+                </div>
+            </div>
+           <!-- Image Container -->
+            <!-- Image Container -->
+            <div class="md:w-1/2 mt-[-60px] relative">
+                <img src="/img/pic1.png" class="w-2/3 ml-14" alt="Picture 1">
+                <img src="/img/pic2.png" class="hidden md:block w-48 h-36 md:w-64 md:h-48 absolute top-[320px] left-[00px]" alt="Picture 2">
+            </div>
+        </div>
+    </section>
+    <script src="js/script.js"></script>
+</body>
+</html>
